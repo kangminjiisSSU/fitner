@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스쿼트 하는 법</title>
+    <style>
+        body {
+            margin: 0;
+            background: #000000; /* 검정색 배경 */
+            font-family: Arial, sans-serif;
+        }
+        /* 수정된 네비게이션 바 스타일 */
+        .nav-bar {
+            background-color: #CD0707; 
+            color: #fff;
+            display: flex;
+            justify-content: space-around;
+            padding: 45px;
+        }
+        .nav-item {
+            text-decoration: none;
+            color: #fff;
+        }
+        @media (max-width: 600px) {
+            .nav-bar {
+                flex-direction: column;
+            }
+            .nav-item {
+                margin-bottom: 5px;
+            }
+        }
+        /* 기존의 스타일 */
+        .absolute {
+            position: absolute;
+        }
+        .text-white {
+            color: white;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .font-inter {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-noto {
+            font-family: 'Noto Sans', sans-serif;
+        }
+        .highlighted {
+            color: #ED2024;
+        }
+        .semi-transparent {
+            opacity: 0.40;
+        }
+    </style>
+</head>
+<body>
+    <!-- 네비게이션 바 -->
+    <div class="nav-bar">
+        <a href="#" class="nav-item">홈</a>
+        <a href="#" class="nav-item">일정 관리</a>
+        <a href="#" class="nav-item">루틴</a>
+        <a href="#" class="nav-item">운동 목록</a>
+        <a href="#" class="nav-item">매칭하기</a>
+    </div>
+    <!-- 빨간 네모 직사각형과 이미지 -->
+    <div class="absolute" style="width: 1800px; height: 1000px; left: -39px; top: 100px; background: #CD0707"></div>
+    <!-- 기존의 내용 -->
+    <div style="width: 100%; height: 100%; position: relative; background: #1C1C1C; display: flex; justify-content: center; align-items: center;">
+        <div class="absolute text-white text-center font-inter" style="left: 520px; top: 500px; font-size: 32px; font-weight: 400; word-wrap: break-word">김로니 ▶ Updated : 24. 05. 01</div>
+        <div class="absolute text-white text-center font-inter" style="width: 506px; height: 107px; left: 472px; top: 350px; font-size: 80px; font-weight: 400; word-wrap: break-word">스쿼트 하는 법</div>
+        <div class="absolute text-white font-inter" style="width: 1106px; height: 75px; left: 163px; top: 1404px; font-size: 35px; font-weight: 400; word-wrap: break-word">웨이트 트레이닝 중 하나로 <br/>데드리프트, 벤치 프레스와 더불어 웨이트 트레이닝의 3대 운동 중 하나이다.<br/></div>
+        <div class="absolute" style="width: 1193px; height: 142px; left: 109px; top: 1355px; background: rgba(217, 217, 217, 0.20); border-radius: 5px"></div>
+        <div class="absolute" style="width: 1440px; height: 0px; left: 13px; top: 1244.47px; border: 2px rgba(255, 255, 255, 0.50) solid"></div>
+        <div class="absolute text-white text-center font-inter" style="left: 256px; top: 1129px; font-size: 50px; font-weight: 400; word-wrap: break-word">|</div>
+        <div class="absolute text-white text-center font-inter" style="left: 286px; top: 1129px; font-size: 50px; font-weight: 400; word-wrap: break-word">효과</div>
+                    <div class="absolute text-white text-center font-inter" style="left: 392px; top: 1129px; font-size: 50px; font-weight: 400; word-wrap: break-word">|</div>
+                    <div class="absolute text-white text-center font-inter" style="left: 423px; top: 1129px; font-size: 50px; font-weight: 400; word-wrap: break-word">자세</div>
+        <div class="absolute text-white text-center font-inter" style="left: 528px; top: 1129px; font-size: 50px; font-weight: 400; word-wrap: break-word">|</div>
+                    <div class="absolute text-white text-center font-inter" style="left: 560px; top: 1128px; font-size: 50px; font-weight: 400; word-wrap: break-word">주의점</div>
+                    <div class="absolute text-center font-inter highlighted" style="width: 245px; height: 75px; left: 50px; top: 1130px; font-size: 50px; font-weight: 400; word-wrap: break-word">스쿼트</div>
+                    <div class="absolute" style="width: 3027px; height: 160px; left: -815px; top: 190px; position: absolute">
+                        <div class="absolute" style="width: 3027px; height: 160px; left: 0px; top: 0px; position: absolute">
+                            <div style="width: 3027px; height: 160px; left: 0px; top: 0px; position: absolute; background: #CD0707"></div>
+                            <div style="width: 1440px; height: 160px; left: 811px; top: 0px; position: absolute; background: #CD0707"></div>
+                        </div>
+                    </div>
+                </div>
+            </body>
+            </html>
+
