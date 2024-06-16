@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>데드리프트 하는 법</title>
+    <style>
+        body {
+            margin: 0;
+            background: #000000;
+            font-family: Arial, sans-serif;
+        }
+
+        /* 수정된 네비게이션 바 스타일 */
+        .nav-bar {
+            background-color: #CD0707;
+            color: #fff;
+            display: flex;
+            justify-content: space-around;
+            padding: 45px;
+        }
+
+        .nav-item {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        @media (max-width: 600px) {
+            .nav-bar {
+                flex-direction: column;
+            }
+
+            .nav-item {
+                margin-bottom: 5px;
+            }
+        }
+
+        /* 기존의 스타일 */
+        .absolute {
+            position: absolute;
+        }
+        .text-white {
+            color: white;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .font-inter {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-noto {
+            font-family: 'Noto Sans', sans-serif;
+        }
+        .highlighted {
+            color: #ED2024;
+        }
+        .semi-transparent {
+            opacity: 0.40;
+        }
+
+        .background-red {
+            width: 100%;
+            height: 622px;
+            position: absolute;
+            left: 0;
+            top: 315px;
+            background: #CD0707;
+        }
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 444px;
+            top: 766px;
+        }
+        .updated-text {
+            position: absolute;
+            left: 566px;
+            top: 796px;
+            text-align: center;
+            color: white;
+            font-size: 32px;
+            font-weight: 400;
+            word-wrap: break-word;
+        }
+        .title {
+            width: 634px;
+            height: 107px;
+            position: absolute;
+            left: 380px;
+            top: 548px;
+            text-align: center;
+            color: white;
+            font-size: 80px;
+            font-weight: 400;
+            word-wrap: break-word;
+        }
+        .description-box {
+            width: 1193px;
+            height: 376px;
+            position: absolute;
+            left: 101px;
+            top: 1347px;
+            background: rgba(217, 217, 217, 0.20);
+            border-radius: 5px;
+        }
+        .divider {
+            width: 1440px;
+            height: 0;
+            position: absolute;
+            left: 0;
+            top: 1242.47px;
+            border: 2px rgba(255, 255, 255, 0.50) solid;
+        }
+        .description-text {
+            position: absolute;
+            left: 151px;
+            top: 1450px;
+            color: white;
+            font-size: 35px;
+            font-weight: 400;
+            word-wrap: break-word;
+        }
+        .menu-item {
+            position: absolute;
+            text-align: center;
+            color: white;
+            font-size: 50px;
+            font-weight: 400;
+            word-wrap: break-word;
+        }
+        .menu-item.active {
+            color: white;
+        }
+        .header {
+            width: 3027px;
+            height: 160px;
+            position: absolute;
+            left: -791px;
+            top: 190px;
+        }
+        .header-background {
+            width: 3027px;
+            height: 160px;
+            position: absolute;
+            background: #CD0707;
+        }
+        .header-section {
+            width: 1440px;
+            height: 160px;
+            position: absolute;
+            background: #CD0707;
+        }
+        .header-item {
+            position: absolute;
+            text-align: center;
+            color: white;
+            font-size: 50px;
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 700;
+            word-wrap: break-word;
+        }
+        .header-item.dimmed {
+            opacity: 0.40;
+        }
+        .logo {
+            width: 90px;
+            height: 80.06px;
+            position: absolute;
+            left: 867px;
+            top: 39.05px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 네비게이션 바 -->
+    <div class="nav-bar">
+        <a href="#" class="nav-item">홈</a>
+        <a href="#" class="nav-item">일정 관리</a>
+        <a href="#" class="nav-item">루틴</a>
+        <a href="#" class="nav-item">운동 목록</a>
+        <a href="#" class="nav-item">매칭하기</a>
+    </div>
+    <!-- 빨간 네모 직사각형과 이미지 -->
+    <div class="absolute" style="width: 1800px; height: 1000px; left: -39px; top: 100px; background: #CD0707"></div>
+    <div class="background-red"></div>
+    <div class="absolute text-white text-center font-inter" style="left: 520px; top: 500px; font-size: 32px; font-weight: 400; word-wrap: break-word">김로니 ▶ Updated : 24. 05. 01</div>
+    <div class="absolute text-white text-center font-inter" style="width: 506px; height: 107px; left: 472px; top: 350px; font-size: 60px; font-weight: 400; word-wrap: break-word">데드리프트 하는 법</div>
+    <div class="description-box"></div>
+    <div class="divider"></div>
+    <div class="description-text">
+        이 운동을 잘못된 자세로 행할 경우 부상의 위험이 크다. <br/>
+        허리나 어깨가 굽어져서는 안 되며 앉을 때 무릎이 발끝보다 <br/>
+        앞으로 나가서는 안 된다. 바벨과 어깨의 위치가 수직이 되어야 한다고 잘못 <br/>
+        가르치는 경우가 있으나 인체의 무게중심 때문에 이러한 자세는 불가능하며, <br/>
+        어깨가 바벨보다 앞쪽에 위치하는 것이 정상이다.
+    </div>
+    <div class="menu-item" style="left: 326px; top: 1127px;">|</div>
+    <div class="menu-item" style="left: 357px; top: 1127px;">효과</div>
+    <div class="menu-item" style="left: 463px; top: 1127px;">|</div>
+    <div class="menu-item" style="left: 494px; top: 1127px;">자세</div>
+    <div class="menu-item" style="left: 600px; top: 1126px;">|</div>
+    <div class="menu-item" style="color: #ED2024; left: 631px; top: 1126px;">주의점</div>
+    <div class="menu-item active" style="left: 82px; top: 1127px;">데드리프트</div>
+</body>
+</html>

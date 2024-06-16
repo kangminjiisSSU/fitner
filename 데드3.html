@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>데드리프트 하는 법</title>
+    <style>
+        body {
+            margin: 0;
+            background: #000000;
+            font-family: Arial, sans-serif;
+        }
+
+        /* 수정된 네비게이션 바 스타일 */
+        .nav-bar {
+            background-color: #CD0707;
+            color: #fff;
+            display: flex;
+            justify-content: space-around;
+            padding: 45px;
+        }
+
+        .nav-item {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        @media (max-width: 600px) {
+            .nav-bar {
+                flex-direction: column;
+            }
+
+            .nav-item {
+                margin-bottom: 5px;
+            }
+        }
+
+        /* 기존의 스타일 */
+        .absolute {
+            position: absolute;
+        }
+        .text-white {
+            color: white;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .font-inter {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-noto {
+            font-family: 'Noto Sans', sans-serif;
+        }
+        .highlighted {
+            color: #ED2024;
+        }
+        .semi-transparent {
+            opacity: 0.40;
+        }
+
+        .background-red {
+            width: 100%;
+            height: 622px;
+            position: absolute;
+            left: 0;
+            top: 315px;
+            background: #CD0707;
+        }
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 444px;
+            top: 766px;
+        }
+        .updated-text {
+            position: absolute;
+            left: 566px;
+            top: 796px;
+            text-align: center;
+            color: white;
+            font-size: 32px;
+            font-weight: 400;
+            word-wrap: break-word;
+        }
+        .title {
+            width: 634px;
+            height: 107px;
+            position: absolute;
+            left: 380px;
+            top: 548px;
+            text-align: center;
+            color: white;
+            font-size: 80px;
+            font-weight: 400;
+            word-wrap: break-word;
+        }
+        .description-box {
+            width: 1193px;
+            height: 295px;
+            position: absolute;
+            left: 101px;
+            top: 1347px;
+            background: rgba(217, 217, 217, 0.20);
+            border-radius: 5px;
+        }
+        .divider {
+            width: 1440px;
+            height: 0;
+            position: absolute;
+            left: 0;
+            top: 1242.47px;
+            border: 2px rgba(255, 255, 255, 0.50) solid;
+        }
+        .description-text {
+            position: absolute;
+            left: 151px;
+            top: 1400px;
+            color: white;
+            font-size: 35px;
+            font-weight: 400;
+            word-wrap: break-word;
+        }
+        .menu-item {
+            position: absolute;
+            text-align: center;
+            color: white;
+            font-size: 50px;
+            font-weight: 400;
+            word-wrap: break-word;
+        }
+        .menu-item.active {
+            color: white;
+        }
+        .header {
+            width: 3027px;
+            height: 160px;
+            position: absolute;
+            left: -791px;
+            top: 190px;
+        }
+        .header-background {
+            width: 3027px;
+            height: 160px;
+            position: absolute;
+            background: #CD0707;
+        }
+        .header-section {
+            width: 1440px;
+            height: 160px;
+            position: absolute;
+            background: #CD0707;
+        }
+        .header-item {
+            position: absolute;
+            text-align: center;
+            color: white;
+            font-size: 50px;
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 700;
+            word-wrap: break-word;
+        }
+        .header-item.dimmed {
+            opacity: 0.40;
+        }
+        .logo {
+            width: 90px;
+            height: 80.06px;
+            position: absolute;
+            left: 867px;
+            top: 39.05px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 네비게이션 바 -->
+    <div class="nav-bar">
+        <a href="#" class="nav-item">홈</a>
+        <a href="#" class="nav-item">일정 관리</a>
+        <a href="#" class="nav-item">루틴</a>
+        <a href="#" class="nav-item">운동 목록</a>
+        <a href="#" class="nav-item">매칭하기</a>
+    </div>
+    <!-- 빨간 네모 직사각형과 이미지 -->
+    <div class="absolute" style="width: 1800px; height: 1000px; left: -39px; top: 100px; background: #CD0707"></div>
+    <div class="background-red"></div>
+    <div class="absolute text-white text-center font-inter" style="left: 520px; top: 500px; font-size: 32px; font-weight: 400; word-wrap: break-word">김로니 ▶ Updated : 24. 05. 01</div>
+    <div class="absolute text-white text-center font-inter" style="width: 506px; height: 107px; left: 472px; top: 350px; font-size: 60px; font-weight: 400; word-wrap: break-word">데드리프트 하는 법</div>
+    <div style="width: 1193px; height: 1298px; left: 129px; top: 1330px; position: absolute; background: rgba(217, 217, 217, 0.20); border-radius: 5px"></div>
+    <div style="width: 1440px; height: 0px; left: 5px; top: 1241.47px; position: absolute; border: 2px rgba(255, 255, 255, 0.50) solid"></div>
+    <div style="width: 1042px; height: 1134px; left: 204px; top: 1436px; position: absolute"><span style="color: white; font-size: 35px; font-family: 'Noto Sans', sans-serif; font-weight: 400; word-wrap: break-word">바벨 앞에 선다. 이때 발 중간쯤에 바벨이 위치하도록 하고, <br/></span><span style="color: white; font-size: 35px; font-family: 'Noto Sans', sans-serif; font-weight: 400; word-wrap: break-word">     발 간격은 골반 너비 정도로 선다.<br/><br/></span><span style="color: white; font-size: 35px; font-family: 'Noto Sans', sans-serif; font-weight: 400; word-wrap: break-word">상체를 숙여 바벨을 잡는다. 팔의 너비는 어깨 너비 정도면 적당하다. <br/></span><span style="color: white; font-size: 35px; font-family: 'Noto Sans', sans-serif; font-weight: 400; word-wrap: break-word"><br/></span><span style="color: white; font-size: 35px; font-family: 'Noto Sans', sans-serif; font-weight: 400; word-wrap: break-word">바벨을 잡았다면 바벨을 움직이지 말고 정강이를 바벨에 가져다 댄다. <br/></span><span style="color: white; font-size: 35px; font-family: 'Noto Sans', sans-serif; font-weight: 400; word-wrap: break-word"><br/></span><span style="color: white; font-size: 35px; font-family: 'Noto Sans', sans-serif; font-weight: 400; word-wrap: break-word">가슴을 열어준다. 그렇게 함으로써 등이 평평해지고 척추가 중립을 이루게 된다. 여기서 팔이 펴지게 되어 단단하게 들어올릴 수 있는 자세가 된다. 또한 바벨의 무게감이 약간 느껴지는 상태가 된다. 여기서 무릎을 살짝 바깥쪽으로 벌려준다. 가슴을 열 때 엉덩이가 내려가면 안 된다.<br/></span><span style="color: white; font-size: 35px; font-family: 'Noto Sans', sans-serif; font-weight: 400; word-wrap: break-word"><br/></span><span style="color: white; font-size: 35px; font-family: 'Noto Sans', sans-serif; font-weight: 400; word-wrap: break-word">광배근을 타이트하게 유지하고 숨을 들이마시고 입을 꾹 다물며 배에 힘을 준 후 바벨을 끌어올리면 된다. 복압이 잡히지 않거나 광배근에 힘이 들어가지 않으면 상체의 텐션이 사라져서 허리가 굽을 수 있다. 또한 바와 몸이 간격이 생겨서 앞쪽으로 떨어지면 안 된다. 바벨이 위로 올라갈 동안 정강이>무릎>허벅지 앞쪽 라인을 자연스럽게 타면서 항상 몸 선에 바벨이 바싹 붙어 있어야 한다.<br/></span><span style="color: white; font-size: 35px; font-family: 'Noto Sans', sans-serif; font-weight: 400; word-wrap: break-word"><br/></span><span style="color: white; font-size: 35px; font-family: 'Noto Sans', sans-serif; font-weight: 400; word-wrap: break-word">끌어올 릴 때는 무릎과 골반이 동시에 펴지도록 신경을 쓴다. 가슴을 펴고 몸을 단단하게 세워서 마무리한다. 엉덩이와 무릎이 구부정하지 않게 펴 줘야 하며 등이 뒤로 젖혀지는 것도 안 된다. 바벨을 들 때에도 그 허리가 무너지지 않도록 지속적으로 힘을 주며 집중하고 있어야 한다. 그렇게 완전히 듦과 동시에 무릎을 완전히 펴고 힙을 짜주어 고관절을 완전히 펴면 한 번의 리프팅 동작이 완성된다.</span></div>
+      <div style="left: 550px; top: 2694px; position: absolute; text-align: center"><span style="color: white; font-size: 24px; font-family: 'Noto Sans', sans-serif; font-weight: 400; word-wrap: break-word">관련 유튜브 영상_</span><span style="color: white; font-size: 32px; font-family: 'Noto Sans', sans-serif; font-weight: 700; word-wrap: break-word"> 시청하기 </span></div>
+      <div style="left: 332px; top: 1126px; position: absolute; text-align: center; color: white; font-size: 50px; font-family: 'Noto Sans', sans-serif; font-weight: 400; word-wrap: break-word">|</div>
+      <div style="left: 362px; top: 1126px; position: absolute; text-align: center; color: white; font-size: 50px; font-family: 'Noto Sans', sans-serif; font-weight: 400; word-wrap: break-word">효과</div>
+      <div style="left: 468px; top: 1126px; position: absolute; text-align: center; color: white; font-size: 50px; font-family: 'Noto Sans', sans-serif; font-weight: 400; word-wrap: break-word">|</div>
+      <div style="left: 605px; top: 1125px; position: absolute; text-align: center; color: white; font-size: 50px; font-family: 'Noto Sans', sans-serif; font-weight: 400; word-wrap: break-word">|</div>
+      <div style="left: 636px; top: 1125px; position: absolute; text-align: center; color: white; font-size: 50px; font-family: 'Noto Sans', sans-serif; font-weight: 400; word-wrap: break-word">주의점</div>
+      <div style="left: 499px; top: 1126px; position: absolute; text-align: center; color: #ED2024; font-size: 50px; font-family: 'Noto Sans', sans-serif; font-weight: 400; word-wrap: break-word">자세</div>
+      <div style="width: 245px; height: 75px; left: 87px; top: 1126px; position: absolute; text-align: center; color: white; font-size: 50px; font-family: 'Noto Sans', sans-serif; font-weight: 400; word-wrap: break-word">데드리프트</div>
+      <div style="width: 3027px; height: 160px; left: -808px; top: 190px; position: absolute">
+      <div style="width: 3027px; height: 160px; left: 0px; top: 0px; position: absolute">
+      <div style="width: 3027px; height: 160px; left: 0px; top: 0px; position: absolute; background: #CD0707"></div>
+      <div style="width: 1440px; height: 160px; left: 811px; top: 0px; position: absolute; background: #CD0707"></div>
+      </div>
+
+      </div>
+      </body>
+      </html>
+
